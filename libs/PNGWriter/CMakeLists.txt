@@ -11,6 +11,7 @@ file(GLOB sources *.cc)
 add_library (PngWriter STATIC ${headers} ${sources})
 
 target_link_libraries(PngWriter LibPng)
+target_link_libraries(PngWriter Zlib)[
 target_link_libraries(PngWriter FreeType)
 
 set_target_properties (PngWriter PROPERTIES FOLDER "00.Libs")
